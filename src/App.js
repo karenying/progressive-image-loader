@@ -13,6 +13,7 @@ function App() {
         placeholder={MiniKaren}
         width='200'
         height='200'
+        alt='karen'
       />
     </div>
   );

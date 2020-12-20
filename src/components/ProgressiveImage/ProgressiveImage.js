@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import './ProgressiveImage.css';
 
-const ProgressiveImage = ({ src, placeholder, width, height }) => {
+const ProgressiveImage = ({ src, placeholder, width, height, alt }) => {
   const [opacity, setOpacity] = useState(1);
 
   return (
@@ -16,7 +16,7 @@ const ProgressiveImage = ({ src, placeholder, width, height }) => {
         style={{ opacity }}
         width={width}
         height={height}
-        alt='Karen'
+        alt={alt}
       />
       <img
         className='ProgressiveImage-img'
@@ -24,7 +24,7 @@ const ProgressiveImage = ({ src, placeholder, width, height }) => {
         onLoad={() => setOpacity(0)}
         width={width}
         height={height}
-        alt='Karen'
+        alt={alt}
       />
     </div>
   );
