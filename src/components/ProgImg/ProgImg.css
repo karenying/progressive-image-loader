@@ -1,0 +1,16 @@
+.ProgImg {
+  position: relative;
+}
+
+.ProgImg-mini,
+.ProgImg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ProgImg-mini {
+  transition: opacity 150ms linear;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
