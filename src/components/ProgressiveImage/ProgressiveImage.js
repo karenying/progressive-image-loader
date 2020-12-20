@@ -1,26 +1,26 @@
 import { useState } from 'react';
 
-import './ProgImg.css';
+import './ProgressiveImage.css';
 
-const ProgImg = ({ mini, img, width, height }) => {
+const ProgressiveImage = ({ src, placeholder, width, height }) => {
   const [opacity, setOpacity] = useState(1);
 
   return (
     <div
-      className='ProgImg'
+      className='ProgressiveImage'
       style={{ width: `${width}px`, height: `${height}px` }}
     >
       <img
-        className='ProgImg-mini'
-        src={mini}
+        className='ProgressiveImage-mini'
+        src={placeholder}
         style={{ opacity }}
         width={width}
         height={height}
         alt='Karen'
       />
       <img
-        className='ProgImg-img'
-        src={img}
+        className='ProgressiveImage-img'
+        src={src}
         onLoad={() => setOpacity(0)}
         width={width}
         height={height}
@@ -30,4 +30,4 @@ const ProgImg = ({ mini, img, width, height }) => {
   );
 };
 
-export default ProgImg;
+export default ProgressiveImage;

@@ -1,13 +1,13 @@
-.ProgImg {
+.ProgressiveImage {
   position: relative;
 }
 
-.ProgImg-mini,
-.ProgImg-img {
+.ProgressiveImage-mini,
+.ProgressiveImage-img {
   position: absolute;
 }
 
-.ProgImg-mini {
+.ProgressiveImage-mini {
   transition: opacity 150ms linear;
   -webkit-filter: blur(2px);
   filter: blur(2px);
